@@ -27,7 +27,7 @@ This project implements **steganography** to embed **secret messages inside imag
 2. **Run the script**
    python stego.py
 
-# 🖼️ Usage
+## 🖼️ Usage
 ## 🔑 Encryption (Hiding a Message)
 1️⃣ Run stego.py
 2️⃣ Enter the secret message
