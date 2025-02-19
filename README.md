@@ -28,23 +28,23 @@ This project implements **steganography** to embed **secret messages inside imag
    python stego.py
 
 ## 🖼️ Usage
-## 🔑 Encryption (Hiding a Message)
+1. 🔑 Encryption (Hiding a Message)
 1️⃣ Run stego.py
 2️⃣ Enter the secret message
 3️⃣ Enter a password
 4️⃣ The encrypted image Encryptedmsg.jpg is generated
 
-## 🔓 Decryption (Retrieving the Message)
+2. 🔓 Decryption (Retrieving the Message)
 1️⃣ Open stego.py
 2️⃣ Enter the correct password
 3️⃣ The hidden message is displayed
 
- ## 🔮 Future Scope
+ 3. 🔮 Future Scope
 Implement AES encryption for additional security
 Develop a GUI-based tool for non-technical users
 Extend the project to video & audio steganography
 
-## 📜 License
+4. 📜 License
 This project is open-source under the MIT License.
 
 🚀 Contributions & Feedback Welcome!
