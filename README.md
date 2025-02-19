@@ -21,14 +21,14 @@ This project implements **steganography** to embed **secret messages inside imag
 📁 Image-Steganography/ │-- stego.py # Main script for encoding & decoding │-- mypic.bmp # Sample image for testing │-- README.md # Documentation │-- .gitignore # Files to ignore in Git
 
 ## 📥 Installation & Setup
-1. **Clone the repository**
+ 1. **Clone the repository**
    git clone https://github.com/yourusername/Image-Steganography.git
    cd Image-Steganography
-2. **Run the script**
+ 2. **Run the script**
    python stego.py
 
 ## 🖼️ Usage
-1. 🔑 Encryption (Hiding a Message)
+### 1. 🔑 Encryption (Hiding a Message)
 1️⃣ Run stego.py
 2️⃣ Enter the secret message
 3️⃣ Enter a password
