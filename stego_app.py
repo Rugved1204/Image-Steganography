@@ -42,24 +42,7 @@ def set_skyblue_gradient_background():
     )
 set_skyblue_gradient_background()
 
-st.markdown(
-    """
-    <style>
-    .decrypted-box {
-        background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
-        color: white !important; /* Ensure pure white text */
-        font-weight: bold;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
-decrypted_message = "heyy"  # Example decrypted text
-st.markdown(f'<p class="decrypted-box">Decrypted Message: {decrypted_message}</p>', unsafe_allow_html=True)
 
 
 
