@@ -36,11 +36,15 @@ def set_skyblue_gradient_background():
             margin-top: 20px;
             color: #444;
         }
+        .decrypted-text {
+        color: white;
+        font-weight: bold;
+    }
         </style>
         """,
         unsafe_allow_html=True
     )
-
+st.markdown(f'<p class="decrypted-text">Decrypted Message: {decrypted_message}</p>', unsafe_allow_html=True)
 set_skyblue_gradient_background()
 
 # Title with emoji and keeping it on one line
