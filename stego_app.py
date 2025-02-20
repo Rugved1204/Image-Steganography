@@ -42,6 +42,22 @@ def set_skyblue_gradient_background():
     )
 set_skyblue_gradient_background()
 
+st.markdown(
+    """
+    <style>
+    .decrypted-text {
+        color: white;
+        font-weight: bold;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+decrypted_message = "heyy"  # Example decrypted text
+st.markdown(f'<p class="decrypted-text">Decrypted Message: {decrypted_message}</p>', unsafe_allow_html=True)
+
+
 # Title with emoji and keeping it on one line
 st.markdown('<div class="title-container">🖼️ Secure Image Steganography Web App 🔒</div>', unsafe_allow_html=True)
 
