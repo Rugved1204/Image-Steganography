@@ -159,7 +159,7 @@ if uploaded_file is not None:
         if temp_image_path and password:
             encrypted_image_path, result = hide_message(temp_image_path, message, password)
             if encrypted_image_path:
-                st.image(encrypted_image_path, caption="Encrypted Image", use_column_width=True)
+                st.image(encrypted_image_path, caption="Encrypted Image", use_container_width=True)
                 with open(encrypted_image_path, "rb") as file:
                     st.download_button(label="Download Encrypted Image", data=file, file_name="encrypted_image.png", mime="image/png")
             st.success(result)
