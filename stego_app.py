@@ -28,13 +28,13 @@ def set_skyblue_gradient_background():
             text-align: center;
             font-size: 1.1em;
             margin-top: 10px;
-            color: #333;
+            color: #FFFFFF;
         }
         .footer {
             text-align: center;
             font-size: 1em;
             margin-top: 20px;
-            color: #FFFEFE;
+            color: #FFFFFF;
         }
         </style>
         """,
