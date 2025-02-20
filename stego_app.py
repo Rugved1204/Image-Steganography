@@ -148,7 +148,7 @@ if uploaded_file is not None:
         temp_file.write(uploaded_file.read())
         temp_image_path = temp_file.name  # Define temp_image_path here
     
-    st.image(temp_image_path, caption="Uploaded Image", use_column_width=True)
+    st.image(temp_image_path, caption="Uploaded Image", use_container_width=True)
 
     # Hide Message
     st.subheader("🔑 Hide a Secret Message")
