@@ -42,8 +42,26 @@ def set_skyblue_gradient_background():
     )
 set_skyblue_gradient_background()
 
+st.markdown(
+    """
+    <style>
+    .decrypted-box {
+        background-color: white !important; /* Pure white background */
+        color: black !important; /* Black text for visibility */
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Optional: adds slight shadow */
+        border: 1px solid #ccc; /* Optional: adds a light border */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-
+decrypted_message = "heyy"  # Your decrypted text
+st.markdown(f'<div class="decrypted-box">Decrypted Message: {decrypted_message}</div>', unsafe_allow_html=True)
 
 
 # Title with emoji and keeping it on one line
