@@ -34,7 +34,7 @@ def set_skyblue_gradient_background():
             text-align: center;
             font-size: 1em;
             margin-top: 20px;
-            color: #444;
+            color: #FFFEFE;
         }
         </style>
         """,
