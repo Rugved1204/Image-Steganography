@@ -6,6 +6,77 @@ import os
 
 import streamlit as st
 
+# Injecting custom CSS for better styling
+st.markdown("""
+    <style>
+        .how-to-use {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        summary {
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+            font-weight: bold;
+        }
+        details {
+            margin-top: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("🛠️ How to Use")
+
+# Using Streamlit Expander (For Streamlit UI)
+with st.expander("🔐 Encrypt a Message in an Image"):
+    st.markdown("""
+    1️⃣ **Upload an Image** – Choose an image where you want to hide the secret message.  
+    2️⃣ **Enter Your Secret Message** – Type the message you wish to encrypt within the image.  
+    3️⃣ **Set a Password** – Provide a password for added security.  
+    4️⃣ **Click 'Encrypt and Save'** – The processed image will be available for download.  
+    """)
+
+with st.expander("🔓 Decrypt a Message from an Image"):
+    st.markdown("""
+    1️⃣ **Upload the Encrypted Image** – Select the image that contains the hidden message.  
+    2️⃣ **Enter the Password** – Provide the correct password used during encryption.  
+    3️⃣ **Click 'Decrypt Message'** – The hidden message will be extracted and displayed.  
+    ⚠️ **Note**: If the wrong password is entered, the message will remain inaccessible.
+    """)
+
+# Adding HTML for better interactivity inside Streamlit
+st.markdown("""
+<div class="how-to-use">
+    <h2>📌 How to Use</h2>
+
+    <details>
+        <summary>🔐 <strong>Encrypt a Message in an Image</strong></summary>
+        <ol>
+            <li><strong>Upload an Image</strong> – Choose an image where you want to hide the secret message.</li>
+            <li><strong>Enter Your Secret Message</strong> – Type the message you wish to encrypt within the image.</li>
+            <li><strong>Set a Password</strong> – Provide a password for added security.</li>
+            <li><strong>Click 'Encrypt and Save'</strong> – The processed image will be available for download.</li>
+        </ol>
+    </details>
+
+    <details>
+        <summary>🔓 <strong>Decrypt a Message from an Image</strong></summary>
+        <ol>
+            <li><strong>Upload the Encrypted Image</strong> – Select the image that contains the hidden message.</li>
+            <li><strong>Enter the Password</strong> – Provide the correct password used during encryption.</li>
+            <li><strong>Click 'Decrypt Message'</strong> – The hidden message will be extracted and displayed.</li>
+            <li>⚠️ <strong>Note:</strong> If the wrong password is entered, the message will remain inaccessible.</li>
+        </ol>
+    </details>
+</div>
+""", unsafe_allow_html=True)
+
+
 # Set sky-blue gradient background
 def set_skyblue_gradient_background():
     st.markdown(
